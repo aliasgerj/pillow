@@ -5,6 +5,9 @@
     "paths": {
       "commonp": [
         "./dist/commonp"
+      ],
+      "printerp": [
+        "./dist/printerp"
       ]
     },
     "outDir": "./dist/out-tsc",

@@ -35,6 +35,39 @@
           }
         }
       }
+    },
+    "printerp": {
+      "projectType": "library",
+      "root": "projects/printerp",
+      "sourceRoot": "projects/printerp/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/printerp/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/printerp/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/printerp/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/printerp/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

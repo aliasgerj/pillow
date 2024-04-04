@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CommonpComponent } from './commonp.component';
+import { PrinterpComponent } from './printerp.component';
 
-describe('CommonpComponent', () => {
-  let component: CommonpComponent;
-  let fixture: ComponentFixture<CommonpComponent>;
+describe('PrinterpComponent', () => {
+  let component: PrinterpComponent;
+  let fixture: ComponentFixture<PrinterpComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CommonpComponent]
+      imports: [PrinterpComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CommonpComponent);
+    fixture = TestBed.createComponent(PrinterpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
